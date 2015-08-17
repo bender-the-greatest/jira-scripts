@@ -1,0 +1,2 @@
+# This script will create an issue under the IT Daily Tasks project. This can be reused, just change the json data to match what you need
+curl -D- -u "$1":"$2" -X POST -H "Content-Type: application/json" --data "{\"fields\":{\"project\":{\"key\":\"ITDAILY\"},\"summary\":\"Test creating a ticket via the REST API\",\"description\":\"Creating of an issue using the REST API\",\"issuetype\":{\"name\":\"Task\"}}}" https://server.domain.tld/rest/api/2/issue/
